@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>{{ title }}</title>
+
+		<link rel="stylesheet" href="{{ revealjs.path }}/dist/reset.css">
+		<link rel="stylesheet" href="{{ revealjs.path }}/dist/reveal.css">
+		<link rel="stylesheet" href="{{ revealjs.path }}/dist/theme/{{ theme }}.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="{{ revealjs.path }}/plugin/highlight/{{ highlight }}.css" id="highlight-theme">
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                {{{ slides }}}
+            </div>
+        </div>
+
+        <script src="{{ revealjs.path }}/dist/reveal.js"></script>
+        <script src="{{ revealjs.path }}/plugin/notes/notes.js"></script>
+        <script src="{{ revealjs.path }}/plugin/highlight/highlight.js"></script>
+        <script src="{{ revealjs.path }}/plugin/math/math.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+			Reveal.initialize({
+                hash: true,
+                
+                math: {
+                    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                },
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealMath,
+                ],
+                transition: 'fade',
+			});
+		</script>
+    </body>
+</html>

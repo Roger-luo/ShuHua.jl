@@ -1,7 +1,14 @@
-name = "Huan"
+name = "ShuHua"
 uuid = "8a21857d-a999-4c49-b292-db56fd3956d5"
 authors = ["Roger-luo <rogerluo.rl18@gmail.com> and contributors"]
 version = "0.1.0"
+
+[deps]
+CommonMark = "a80b9123-70ca-4bc0-993e-6e3bcb318db6"
+LiveServer = "16fef848-5104-11e9-1b77-fb7a48bbb589"
+Mustache = "ffc61752-8dc7-55ee-8c37-f3e9cdd09e70"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Tar = "a4e569a6-e804-4fa4-b0f3-eef7a1d5b13e"
 
 [compat]
 julia = "1"

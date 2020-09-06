@@ -1,0 +1,7 @@
+title = "Huan: Roger's Little Slide Show Generator"
+authors = ["Xiu-Zhe (Roger) Luo <rogerluo.rl18@gmail.com>"]
+tags = ["post", "slides", "generator"]
+mathjax = true
+# default slide transition style
+# valid styles are: none, fade, slide, convex, concave, zoom
+transition = "fade"
